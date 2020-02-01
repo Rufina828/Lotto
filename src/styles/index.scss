@@ -1,0 +1,256 @@
+@import './reset.css';
+
+// @mixin 설정
+@mixin clear(){
+    &:after{
+        display:block;
+        content:"";
+        clear:both;
+    }
+}
+.clear{
+    @include clear();
+}
+// @mixin 설정 끝
+
+// top header
+.header{
+    height:130px;
+    padding-top:24px;
+    background-color:red;
+}
+.container{
+    @extend .clear;
+    width:1200px;
+    margin:0 auto;
+    background-color:purple;
+}
+.header_logo{
+    float:left;
+    background-color:greenyellow;
+}
+.header_ul{
+    @extend .clear;
+    float:right;
+    padding-top:30px;
+    background-color:greenyellow;
+}
+.header_ul_li{
+    float:left;
+    min-width:45px;
+    height:25px;
+    font-size:13px;
+    color:white;
+    text-align:center;
+    line-height:22px;
+    padding:0 9px;
+    margin-right:5px;
+    background-color:magenta;
+}
+.header_ul_li1{
+    background-color:#666666;
+}
+.header_ul_li2{
+    background-color:#007bc3;
+}
+.header_ul_li3{
+    background-color:#0a857e;
+}
+.header_ul_li4{
+    margin-right:0;
+    background-color:#0a857e;
+}
+
+// nav
+.nav{
+    height:62px;
+    border-top:1px solid #eeeeee;
+    border-bottom:3px solid #007bc3;
+    background-color:blue;
+}
+.nav_ul{
+    @extend .clear;
+    text-align:center;
+    background-color:greenyellow;
+}
+.nav_ul_li{
+    float:left;
+    height:62px;
+    font-size:18px;
+    padding:0 49px;
+    line-height:62px;
+    background-color:magenta;
+}
+.nav_ul_li:hover{
+    color:white;
+    background-color:#007bc3;
+}
+.nav_ul_li1{
+    margin-left:120px;
+}
+
+// 메인 전개 시작
+.wrap{
+    height:1000px;
+    background-color:yellow;
+}
+
+// 당첨결과표
+.win_wrap{
+    padding-top:60px;
+    background-color:red;
+}
+.win_box{
+    @extend .clear;
+    height:427px;
+    color:white;
+}
+.win_header{
+    font-size:18px;
+    height:41px;
+    border-bottom:1px solid white;
+}
+.win_content{
+    margin-top:18px;
+}
+
+// 로또6/45
+.win_lotto{
+    width:639px;
+    height:100%;
+    float:left;
+    padding:28px 40px 0;
+    background-color:#227dbd;
+}
+.lotto_content_up{
+    text-align:center;
+}
+.lotto_content_up_header{
+    background-color:tomato;
+}
+.lotto_content_up_header_title{
+    font-size:25px;
+}
+.lotto_content_up_header_date{
+    font-size:13px;
+}
+.lotto_content_up_circle{
+    margin-top:30px;
+    background-color:magenta;
+}
+.lotto_ball{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    border-radius:50px;
+    font-size:28px;
+    font-weight:bold;
+    text-align:center;
+    line-height:47px;
+    margin-left:5px;
+    background-color:green;
+}
+.lotto_ball_plus{
+    display:inline-block;
+    width:20px;
+    height:50px;
+    border-radius:50px;
+    font-size:40px;
+    font-weight:bold;
+    text-align:center;
+    line-height:47px;
+    margin-right:5px;
+}
+.lotto_content_up_txt{
+    @extend .clear;
+    margin-top:20px;
+    background-color:blue;
+}
+.lotto_content_up_txt_money{
+    font-size:18px;
+}
+.lotto_content_up_txt_money1{
+    font-size:16px;
+}
+.lotto_content_down{
+    position:relative;
+    margin-top:28px;
+    padding-top:28px;
+    border-top:1px solid white;
+    background-color:darkorange;
+}
+.lotto_content_down_header{
+    font-size:13px;
+    background-color:springgreen;
+}
+.lotto_content_down_header_next{
+    font-size:16px;
+}
+.lotto_content_down_all{
+    position:absolute;
+    top:28px;
+    right:0;
+    background-color:darkmagenta;
+}
+.lotto_content_down_money{
+    @extend .clear;
+    width:366px;
+    margin-top:10px;
+    border-right:1px solid #63a1c8;
+    border-bottom:1px solid #63a1c8;
+    background-color:darksalmon;
+}
+.lotto_content_down_money_li{
+    float:left;
+    width:50%;
+    text-align:center;
+    line-height:22px;
+    border-top:1px solid #63a1c8;
+    border-left:1px solid #63a1c8;
+}
+.lotto_content_down_money_li_strong{
+    display:block;
+    height:34px;
+    line-height:32px;
+    background-color:#3b647d;
+}
+.lotto_content_down_money_li_span{
+    display:inline-block;
+    height:34px;
+    line-height:32px;
+    padding-left:29px;
+    background:url(../assets/images/icon_won_white.png) 0 50% no-repeat;
+}
+.lotto_content_down_button_hide{
+    position:absolute;
+    left:-999px;
+}
+.lotto_content_down_button{
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:173px;
+    height:69px;
+    font-size:19px;
+    text-align:center;
+    line-height:71px;
+    background-color:#0a857e;
+}
+
+// 연금복권520
+.win_520{
+    width:281px;
+    height:100%;
+    float:left;
+    padding:28px 40px 0;
+    background-color:#589ed3;
+}
+
+// 즉석식인쇄복권
+.win_speetto{
+    width:280px;
+    height:100%;
+    float:left;
+    padding:28px 40px 0;
+    background-color:#5e7bc1;
+}
