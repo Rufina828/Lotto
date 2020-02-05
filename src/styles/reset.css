@@ -21,7 +21,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-family: 'Noto Sans KR','맑은 고딕','Malgun Gothic','돋움', Dotum, sans-serif;
+	font-family: 'Nanum Gothic', sans-serif;
 	font-size: 100%;
 	font: inherit;
 	letter-spacing:-0.05em;
@@ -58,4 +58,11 @@ html,body{
 	position: relative;
 	height:100%;
 	font-size:14px;
+}
+table,tr,th,td{
+	vertical-align:middle;
+	border:1px solid #63a1c8;
+}
+strong{
+	font-weight:bold;
 }

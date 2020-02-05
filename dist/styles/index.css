@@ -1,5 +1,5 @@
 @import url(./reset.css);
-.clear:after, .container:after, .header_ul:after, .nav_ul:after, .win_box:after, .lotto_content_up_txt:after, .lotto_content_down_money:after {
+.clear:after, .container:after, .header_ul:after, .nav_ul:after, .win_box:after, .lotto_content_up_txt:after, .lotto_content_down_next_money:after {
 	display: block;
 	content: "";
 	clear: both;
@@ -8,24 +8,20 @@
 .header {
 	height: 130px;
 	padding-top: 24px;
-	background-color: red;
 }
 
 .container {
 	width: 1200px;
 	margin: 0 auto;
-	background-color: purple;
 }
 
 .header_logo {
 	float: left;
-	background-color: greenyellow;
 }
 
 .header_ul {
 	float: right;
 	padding-top: 30px;
-	background-color: greenyellow;
 }
 
 .header_ul_li {
@@ -38,7 +34,6 @@
 	line-height: 22px;
 	padding: 0 9px;
 	margin-right: 5px;
-	background-color: magenta;
 }
 
 .header_ul_li1 {
@@ -62,12 +57,10 @@
 	height: 62px;
 	border-top: 1px solid #eeeeee;
 	border-bottom: 3px solid #007bc3;
-	background-color: blue;
 }
 
 .nav_ul {
 	text-align: center;
-	background-color: greenyellow;
 }
 
 .nav_ul_li {
@@ -76,7 +69,7 @@
 	font-size: 18px;
 	padding: 0 49px;
 	line-height: 62px;
-	background-color: magenta;
+	color: #252525;
 }
 
 .nav_ul_li:hover {
@@ -106,7 +99,7 @@
 .win_header {
 	font-size: 18px;
 	height: 41px;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .win_content {
@@ -125,21 +118,19 @@
 	text-align: center;
 }
 
-.lotto_content_up_header {
-	background-color: tomato;
-}
-
 .lotto_content_up_header_title {
 	font-size: 25px;
+	vertical-align: middle;
 }
 
 .lotto_content_up_header_date {
 	font-size: 13px;
+	vertical-align: middle;
+	opacity: 0.7;
 }
 
 .lotto_content_up_circle {
 	margin-top: 30px;
-	background-color: magenta;
 }
 
 .lotto_ball {
@@ -153,6 +144,10 @@
 	line-height: 47px;
 	margin-left: 5px;
 	background-color: green;
+}
+
+.lotto_ball1 {
+	margin-left: 0;
 }
 
 .lotto_ball_plus {
@@ -169,7 +164,6 @@
 
 .lotto_content_up_txt {
 	margin-top: 20px;
-	background-color: blue;
 }
 
 .lotto_content_up_txt_money {
@@ -184,72 +178,79 @@
 	position: relative;
 	margin-top: 28px;
 	padding-top: 28px;
-	border-top: 1px solid white;
-	background-color: darkorange;
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .lotto_content_down_header {
+	position: relative;
 	font-size: 13px;
-	background-color: springgreen;
 }
 
 .lotto_content_down_header_next {
 	font-size: 16px;
 }
 
+.lotto_content_down_header_now {
+	margin-left: 10px;
+	opacity: 0.7;
+}
+
 .lotto_content_down_all {
 	position: absolute;
-	top: 28px;
+	top: 0;
 	right: 0;
-	background-color: darkmagenta;
+}
+
+.lotto_content_down_next_money {
+	margin-top: 15px;
 }
 
 .lotto_content_down_money {
-	width: 366px;
-	margin-top: 10px;
-	border-right: 1px solid #63a1c8;
-	border-bottom: 1px solid #63a1c8;
-	background-color: darksalmon;
-}
-
-.lotto_content_down_money_li {
 	float: left;
-	width: 50%;
-	text-align: center;
-	line-height: 22px;
-	border-top: 1px solid #63a1c8;
-	border-left: 1px solid #63a1c8;
+	width: 366px;
+	border: 1px solid #63a1c8;
 }
 
-.lotto_content_down_money_li_strong {
-	display: block;
+.lotto_content_down_money_tr {
 	height: 34px;
-	line-height: 32px;
+	text-align: center;
+	border: 1px solid #63a1c8;
+}
+
+.lotto_content_down_money_th {
+	height: 34px;
 	background-color: #3b647d;
 }
 
-.lotto_content_down_money_li_span {
-	display: inline-block;
+.lotto_content_down_money_td {
 	height: 34px;
-	line-height: 32px;
-	padding-left: 29px;
+	vertical-align: middle;
+}
+
+.lotto_content_down_money_td:before {
+	display: inline-block;
+	width: 21px;
+	height: 20px;
+	content: "";
+	vertical-align: middle;
 	background: url(../assets/images/icon_won_white.png) 0 50% no-repeat;
 }
 
-.lotto_content_down_button_hide {
-	position: absolute;
-	left: -999px;
+.lotto_content_down_money_td_span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -1px;
 }
 
 .lotto_content_down_button {
-	position: absolute;
-	right: 0;
-	bottom: 0;
+	float: right;
 	width: 173px;
-	height: 69px;
+	height: 70px;
 	font-size: 19px;
 	text-align: center;
 	line-height: 71px;
+	border: none;
+	color: white;
 	background-color: #0a857e;
 }
 
