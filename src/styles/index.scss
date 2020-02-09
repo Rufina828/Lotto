@@ -93,13 +93,13 @@
 // 메인 전개 시작
 .wrap{
     height:1000px;
-    background-color:yellow;
+    background-color:pink;
 }
 
 // wrap1 당첨결과표
 .wrap1{
     padding-top:60px;
-    background-color:red;
+//    background-color:red;
 }
 .win_box{
     @extend .clear;

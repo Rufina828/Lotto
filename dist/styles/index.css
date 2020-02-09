@@ -83,12 +83,11 @@
 
 .wrap {
 	height: 1000px;
-	background-color: yellow;
+	background-color: pink;
 }
 
 .wrap1 {
 	padding-top: 60px;
-	background-color: red;
 }
 
 .win_box {
