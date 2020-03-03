@@ -1,6 +1,7 @@
 @import './reset.css';
 
 // @mixin 설정
+
 @mixin clear(){
     &:after{
         display:block;
@@ -11,29 +12,27 @@
 .clear{
     @include clear();
 }
+
 // @mixin 설정 끝
 
-// top header
+// <---------- top header ---------->
+
 .header{
     height:130px;
     padding-top:24px;
-//    background-color:red;
 }
 .container{
     @extend .clear;
     width:1200px;
     margin:0 auto;
-//    background-color:purple;
 }
 .header_logo{
     float:left;
-//    background-color:greenyellow;
 }
 .header_ul{
     @extend .clear;
     float:right;
     padding-top:30px;
-//    background-color:greenyellow;
 }
 .header_ul_li{
     float:left;
@@ -45,7 +44,6 @@
     line-height:22px;
     padding:0 9px;
     margin-right:5px;
-//    background-color:magenta;
 }
 .header_ul_li1{
     background-color:#666666;
@@ -61,17 +59,15 @@
     background-color:#0a857e;
 }
 
-// nav
+// <---------- nav ---------->
 .nav{
     height:62px;
     border-top:1px solid #eeeeee;
     border-bottom:3px solid #007bc3;
-//    background-color:blue;
 }
 .nav_ul{
     @extend .clear;
     text-align:center;
-//    background-color:greenyellow;
 }
 .nav_ul_li{
     float:left;
@@ -80,7 +76,6 @@
     padding:0 49px;
     line-height:62px;
     color:#252525;
-//    background-color:magenta;
     &:hover{
         color:white;
         background-color:#007bc3;
@@ -90,16 +85,16 @@
     margin-left:120px;
 }
 
-// 메인 전개 시작
+// <---------- 메인 전개 시작 ---------->
+
 .wrap{
     height:1000px;
-//    background-color:pink;
 }
 
-// wrap1 당첨결과표
+// <---------- wrap1 당첨결과표 ----------> 
+
 .wrap1{
     padding-top:60px;
-//    background-color:red;
 }
 .win_box{
     @extend .clear;
@@ -115,7 +110,8 @@
     margin-top:18px;
 }
 
-// 로또6/45
+// <---------- 로또6/45 ----------> 
+
 .win_lotto{
     width:639px;
     height:100%;
@@ -127,7 +123,7 @@
     text-align:center;
 }
 .lotto_content_up_header{
-//    background-color:tomato;
+    
 }
 .lotto_content_up_header_title{
     font-size:25px;
@@ -140,7 +136,6 @@
 }
 .lotto_content_up_circle{
     margin-top:30px;
-//    background-color:magenta;
 }
 .lotto_ball{
     display:inline-block;
@@ -153,7 +148,6 @@
     line-height:47px;
     margin-left:5px;
     text-shadow:0 0 3px rgba(73, 57, 0, .8);
-//    background-color:green;
 }
 .lotto_ball1{
     margin-left:0;
@@ -191,7 +185,6 @@
 .lotto_content_up_txt{
     @extend .clear;
     margin-top:20px;
-//    background-color:blue;
 }
 .lotto_content_up_txt_money{
     font-size:18px;
@@ -204,12 +197,10 @@
     margin-top:28px;
     padding-top:28px;
     border-top:1px solid rgba(255,255,255,0.3);
-//    background-color:darkorange;
 }
 .lotto_content_down_header{
     position:relative;
     font-size:13px;
-//    background-color:springgreen;
 }
 .lotto_content_down_header_next{
     font-size:16px;
@@ -222,7 +213,6 @@
     position:absolute;
     top:0;
     right:0;
-//    background-color:darkmagenta;
 }
 .lotto_content_down_next_money{
     @extend .clear;
@@ -232,7 +222,6 @@
     float:left;
     width:366px;
     border:1px solid #63a1c8;
-//    background-color:darksalmon;
 }
 .lotto_content_down_money_tr{
     height:34px;
@@ -275,7 +264,8 @@
     background-color:#0a857e;
 }
 
-// 연금복권520
+// <---------- 연금복권520 ---------->
+
 .win_520{
     width:281px;
     height:100%;
@@ -285,23 +275,19 @@
 }
 .w520_content_up_header{
     @extend .clear;
-//    background-color:navy;
 }
 .w520_content_up_header_win{
     float:left;
     font-size:16px;
-//    background-color:orange;
 }
 .w520_content_up_header_date{
     float:right;
     font-size:13px;
     margin-top:1px;
-//    background-color:greenyellow;
 }
 .w520_content_up_square{
     padding-top:25px;
     font-weight:bold;
-//    background-color:hotpink;
 }
 .w520_square_group{
     display:inline-block;
@@ -362,7 +348,8 @@
     background-color:#0a857e;
 }
 
-// 즉석식인쇄복권
+// <---------- 즉석식인쇄복권 ---------->
+
 .win_speetto{
     width:280px;
     height:100%;
@@ -433,7 +420,7 @@
     border-right:none;
 }
 
-// wrap2 전자복권 및 실시간잭팟당첨금
+// <---------- wrap2 전자복권 및 실시간잭팟당첨금 ---------->
 
 .wrap_marginTop{
     margin-top:20px;
@@ -450,7 +437,6 @@
 .jjbg{
     width:920px;
     border-right:1px solid #ddd;
-//    background-color:skyblue;
 }
 .wrap2_header{
     @extend .clear;
@@ -514,9 +500,11 @@
     background:url(../assets/images/ico_won_blue.jpg) 0 no-repeat;
 }
 
+// <---------- wrap3 화면분할 ---------->
+
 .wrap3{
     height:421px;
-    background-color:blueviolet;
+    background-color:green;
 }
 .wrap3_wrapbox{
     @extend .clear;
@@ -526,6 +514,9 @@
     height:421px;
     border:1px solid #ddd;
     border-left:0px;
+}
+.wrap3_padding{
+    padding:25px;
 }
 .wrap3_box1{
     width:320px;
@@ -541,21 +532,118 @@
 .wrap3_fund{
     height:314px;
     border-bottom:1px solid #ddd;
+    background:#fafafa url(../assets/images/wrap3_3.png) no-repeat;
+}
+.wrap3_fund_txt1{
+    font-size:17px;
+    line-height:23px;
+}
+.wrap3_fund_txt1_blue{
+    color:#2179af;
+}
+
+.wrap3_happyPlus{
+    height:105px;
+    background:#eaf3f5 url(../assets/images/wrap3_4.png) 170px 50% no-repeat;
+}
+.wrap3_happyPlus_strong{
+    font-size:16px;
+}
+.wrap3_happyPlus_txt{
+    margin-top:7px;
+    line-height:18px;
+    color:#777;
 }
 .wrap3_box3{
     width:280px;
+    padding:0 15px 0 17px;
 }
+.wrap3_link{
+    height:70px;
+    padding-top:15px;
+    border-bottom:1px solid #ddd;
+}
+.wrap3_link1{
+    background:url(../assets/images/wrap3_5_1.png) 3px 50% no-repeat;
+}
+.wrap3_link2{
+    background:url(../assets/images/wrap3_5_2.png) 3px 50% no-repeat;
+}
+.wrap3_link3{
+    background:url(../assets/images/wrap3_5_3.png) 3px 50% no-repeat;
+}
+.wrap3_link4{
+    background:url(../assets/images/wrap3_5_4.png) 3px 50% no-repeat;
+}
+.wrap3_link5{
+    background:url(../assets/images/wrap3_5_5.png) 3px 50% no-repeat;
+}
+.wrap3_link6{
+    background:url(../assets/images/wrap3_5_6.png) 3px 50% no-repeat;
+    border-bottom:none;
+}
+.wrap3_link_txt{
+    padding-left:60px;
+    font-size:12px;
+    line-height:20px;
+}
+.wrap3_link_gray{
+    color:#777;
+}
+
 .wrap3_box4{
     width:280px;
     background:url(../assets/images/wrap3_6.jpg)
 }
-.wrap3_padding{
-    padding:30px;
+.wrap3_center_txt1{
+    font-size:13px;
+    color:#bfe6ff;
+    line-height:16px;
 }
+.wrap3_center_txt2{
+    font-size:17px;
+    color:#ffcda5;
+    line-height:50px;
+}
+.wrap3_center_txt3{
+    font-size:13px;
+    color:white;
+}
+.wrap3_center_txt4{
+    font-size:15px;
+    color:white;
+    line-height:30px;
+}
+.wrap3_selfPlan{
+    padding-top:35px;
+}
+.wrap3_self_li1{
+    background:url(../assets/images/ico_self1.png) 25px 50% no-repeat;
+}
+.wrap3_self_li2{
+    background:url(../assets/images/ico_self2.png) 25px 50% no-repeat;
+}
+.wrap3_self_li3{
+    background:url(../assets/images/ico_self3.png) 25px 50% no-repeat;
+}
+.wrap3_self_li{
+    height:60px;
+    background-color:white;
+    border-bottom:1px solid #ddd;
+    &:nth-last-of-type(1){
+        border-bottom:none;
+    }
+}
+.wrap3_self_txt{
+    color:#333;
+    padding:23px 0 0 90px;
+
+}
+
+// <---------- wrap4 분류표 ---------->
 
 .wrap4{
     height:340px;
-//   background-color:salmon;
 }
 .wrap4_table{
     border:1px solid #ddd;
@@ -592,13 +680,13 @@
     line-height:20px;
 }
 
+// <---------- footer ---------->
+
 .wrap5{
     margin:30px 0;
- //   background-color:salmon;
 }
 .wrap5_link{
     @extend .clear;
-//    background-color:red;
 }
 .wrap5_link_li{
     float:left;
@@ -632,7 +720,6 @@
 
 .bottom_footer{
     margin:40px 0;
-//    background-color:pink;
 }
 .bottom_footer_in{
     position:relative;
@@ -644,14 +731,12 @@
     bottom:0;
     width:150px;
     text-align:center;
-//    background-color:red;
 }
 .footer_left_wrap{
     position:absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-//    background-color:green;
 }
 .footer_logo{
 }
@@ -667,7 +752,6 @@
     padding-left:200px;
     color:#888;
     line-height:20px;
-//    background-color:yellow;
 }
 .footer_txt{
     font-size:15px;
@@ -685,9 +769,8 @@
 }
 .footer_right{
     position:absolute;
-    top:0;
+    top:5px;
     right:0;
-//    background-color:blue;
 }
 .footer_right_img1{
     margin-right:15px;
