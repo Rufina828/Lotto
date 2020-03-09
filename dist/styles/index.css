@@ -1,5 +1,5 @@
 @import url(./reset.css);
-.clear:after, .container:after, .header_ul:after, .nav_ul:after, .win_box:after, .lotto_content_up_txt:after, .lotto_content_down_next_money:after, .w520_content_up_header:after, .w520_content_up_txt:after, .w520_content_down_btn:after, .speetto_content_header:after, .speetto_content_table:after, .wrap2_borderbox:after, .wrap2_header:after, .wrap2_jjbg_ul:after, .wrap2_jjbg_li:after, .wrap2_jackpot_li:after, .wrap3_wrapbox:after, .wrap5_link:after, .bottom_ul:after {
+.clear:after, .container:after, .header_ul:after, .nav_ul:after, .win_box:after, .lotto_content_up_txt:after, .lotto_content_down_next_money:after, .w520_content_up_header:after, .w520_content_up_txt:after, .w520_content_down_btn:after, .speetto_content_header:after, .speetto_content_table:after, .wrap2_borderbox:after, .wrap2_header:after, .wrap2_jjbg_ul:after, .wrap2_jjbg_li:after, .wrap2_jackpot_li:after, .wrap3_wrapbox:after, .wrap3_interview_article:after, .wrap3_fund:after, .wrap5_link:after, .bottom_ul:after {
 	display: block;
 	content: "";
 	clear: both;
@@ -541,7 +541,6 @@
 
 .wrap3 {
 	height: 421px;
-	background-color: green;
 }
 
 .wrap3_box {
@@ -565,6 +564,44 @@
 	border-bottom: 1px solid #ddd;
 }
 
+.wrap3_interview_article {
+	margin-top: 7px;
+}
+
+.wrap3_interview_img {
+	float: left;
+	position: relative;
+	margin-right: 20px;
+	width: 110px;
+	height: 70px;
+	border: 1px solid #ddd;
+	background: url(../assets/images/logo_speetto.png) 50% 50% no-repeat;
+	background-size: auto 100%;
+}
+
+.wrap3_interview_img_span {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	line-height: 23px;
+	color: white;
+	font-size: 12px;
+	background-color: rgba(68, 68, 68, 0.8);
+}
+
+.wrap3_interview_txt {
+	font-size: 15px;
+	line-height: 20px;
+	padding-top: 5px;
+}
+
+.wrap3_interview_txt_p {
+	font-size: 13px;
+	color: #999;
+}
+
 .wrap3_box2 {
 	width: 320px;
 }
@@ -572,7 +609,7 @@
 .wrap3_fund {
 	height: 314px;
 	border-bottom: 1px solid #ddd;
-	background: #fafafa url(../assets/images/wrap3_3.png) no-repeat;
+	background: #fafafa url(../assets/images/wrap3_3.png) 150px 100px no-repeat;
 }
 
 .wrap3_fund_txt1 {
@@ -582,6 +619,42 @@
 
 .wrap3_fund_txt1_blue {
 	color: #2179af;
+}
+
+.wrap3_fund_txt2 {
+	margin-top: 20px;
+}
+
+.wrap3_fund_txt2_li {
+	color: #666;
+	margin-top: 10px;
+	padding-left: 18px;
+	background: url(../assets/images/bul_fund.png) 1px no-repeat;
+}
+
+.wrap3_fund_txt3 {
+	margin-top: 30px;
+	text-align: center;
+	border: 1px solid #ddd;
+}
+
+.wrap3_fund_txt3_li1 {
+	line-height: 30px;
+	color: #464646;
+	background-color: #e7f5f5;
+	border-bottom: 1px solid #ddd;
+}
+
+.wrap3_fund_txt3_li2 {
+	font-size: 17px;
+	line-height: 30px;
+	color: #2179af;
+}
+
+.wrap3_fund_txt4 {
+	float: right;
+	margin-top: 10px;
+	color: #444;
 }
 
 .wrap3_happyPlus {
