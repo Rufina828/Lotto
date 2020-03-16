@@ -560,6 +560,50 @@
     font-size:13px;
     color:#999;
 }
+.wrap3_notice_head{
+    @extend .clear;
+}
+.wrap3_notice_header{
+    float:left;
+    padding:0 20px;
+    line-height:35px;
+}
+.wrap3_notice_header1{
+    color:white;
+    border:1px solid #2179af;
+    background-color:#2179af;
+}
+.wrap3_notice_header2{
+    color:#666;
+    border:1px solid #ddd;
+//    border-bottom:none;
+    background-color:#fafafa;
+}
+.wrap3_notice_list{
+    border-top:1px solid #ddd;
+    padding-top:10px;
+    margin-top:-1px;
+    padding-left:15px;
+//    line-height:37px;
+    font-size:15px;
+    color:#555;
+}
+.wrap3_notice_list1{
+    display:block;
+//    display:none;
+}
+.wrap3_notice_list2{
+    display:none;
+}
+.wrap3_notice_list_txt{
+    list-style-type:disc;
+    padding-top:22px;
+}
+.wrap3_notice_list_date{
+    float:right;
+    font-size:13px;
+    color:#777;
+}
 
 // <---------- wrap3 두번째열 ---------->
 
