@@ -85,6 +85,78 @@
     margin-left:120px;
 }
 
+// <---------- nav_fold 시작 ----------> 
+.nav_fold{
+    position:absolute;
+    left:0;
+    width:100%;
+    padding:15px 0;
+    background-color:white;
+    box-shadow:0 2px 2px 0 rgba(0,0,0,0.3);
+}
+.nav_fold_ul{
+    @extend .clear;
+}
+.nav_fold_li{
+    float:left;
+    width:230px;
+    margin:5px;
+    border:1px solid #ddd;
+}
+.nav_fold_img{
+    padding-left:107px;
+    padding-top:20px;
+    height:90px;
+}
+.nav_fold_img1{
+    background:url(../assets/images/gnb_game1.jpg) 14px 50% no-repeat;
+}
+.nav_fold_img2{
+    background:url(../assets/images/gnb_game2.jpg) 14px 50% no-repeat;
+}
+.nav_fold_img3{
+    background:url(../assets/images/gnb_game3.jpg) 14px 50% no-repeat;
+}
+.nav_fold_img4{
+    background:url(../assets/images/gnb_game4.jpg) 14px 50% no-repeat;
+}
+.nav_fold_img5{
+    background:url(../assets/images/gnb_game5.jpg) 14px 50% no-repeat;
+}
+.nav_fold_img6{
+    background:url(../assets/images/gnb_game6.jpg) 14px 50% no-repeat;
+}
+.nav_fold_img7{
+    background:url(../assets/images/gnb_game7.jpg) 14px 50% no-repeat;
+}
+.nav_fold_img8{
+    background:url(../assets/images/gnb_game8.jpg) 14px 50% no-repeat;
+}
+.nav_fold_img9{
+    background:url(../assets/images/gnb_game9.jpg) 14px 50% no-repeat;
+}
+.nav_fold_img10{
+    padding-left:120px;
+    padding-top:24px;
+    background:#12a19a url(../assets/images/gnb_game10.png) 25px 50% no-repeat;
+}
+.nav_fold_txt{
+    font-size:12px;
+    color:#777;
+    letter-spacing:-0.1em;
+}
+.nav_fold_txt_strong{
+    line-height:20px;
+    font-size:15px;
+    color:#1d1d1d;
+}
+.nav_fold_txt_white{
+    line-height:22px;
+    font-size:18px;
+    color:white;
+    letter-spacing:-0.1em;
+}
+
 // <---------- 메인 전개 시작 ---------->
 
 .wrap{
@@ -675,6 +747,7 @@
 .wrap3_link{
     height:70px;
     padding-top:15px;
+    padding-left:60px;
     border-bottom:1px solid #ddd;
 }
 .wrap3_link1{
@@ -697,7 +770,7 @@
     border-bottom:none;
 }
 .wrap3_link_txt{
-    padding-left:60px;
+//    padding-left:60px;
     font-size:12px;
     line-height:20px;
 }
